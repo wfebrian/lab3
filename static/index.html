@@ -23,9 +23,9 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
+			<h1>Wesley Febrian</h1>
+			<p>human-computer interaction &middot; photography &middot; software engineering</p>
+			<button id="testjs" class="btn btn-primary btn-lg">Bio</button>
 		</div>
 
 
@@ -35,55 +35,84 @@
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<div class="project" id="project1">
 			<a href="" class="thumbnail">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
+				<img src="images/runofthemill.jpg" alt="Lorem Pixel image" class="img" width = "70%" height = "70%">
+				<p>Run-of-the-Mill</p>
 			</a>
 		</div>
 		<div class="project" id="project2">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Needfinding</p>
+				<img src="images/upintheair.JPG" alt="Lorem Pixel image" class="img" width = "70%" height = "70%">
+				<p>Up in the Air</p>
 			</a>
 		</div>
 		<div class="project" id="project3">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
+				<img src="images/travel.jpg" alt="Lorem Pixel image" class="img" width = "70%" height = "70%">
+				<p>Travel</p>
 			</a>
 		</div>
 		<div class="project" id="project4">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
+				<img src="images/beaches.jpg" alt="Lorem Pixel image" class="img" width = "70%" height = "70%">
+				<p>Beaches</p>
 			</a>
 		</div>
 		<div class="project" id="project5">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
+				<img src="images/nature.jpg" alt="Lorem Pixel image" class="img" width = "70%" height = "70%">
+				<p>Nature</p>
 			</a>
 		</div>
 		<div class="project" id="project6">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
+				<img src="images/animal.jpg" alt="Lorem Pixel image" class="img" width = "70%" height = "70%">
+				<p>Animal</p>
 			</a>
 		</div>
 		<div class="project" id="project7">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
+				<img src="images/monochrome.jpg" alt="Lorem Pixel image" class="img" width = "70%" height = "70%">
+				<p>Monochrome</p>
 			</a>
 		</div>
 		<div class="project" id="project8">
 			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
+				<img src="images/solitude.jpg" alt="Lorem Pixel image" class="img" width = "70%" height = "70%">
+				<p>Solitude</p>
 			</a>
 		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+
+  <form id="projectForm" role="form">
+    <div class="form-group">
+      <label for="project">Please change the project:</label>
+      <select class="form-control" id="project">
+        <option value="#project1">Run-of-the-Mill</option>
+        <option value="#project2">Up in the Air</option>
+        <option value="#project3">Travel</option>
+        <option value="#project4">Beaches</option>
+        <option value="#project5">Nature</option>
+        <option value="#project6">Animal</option>
+        <option value="#project7">Monochrome</option>
+        <option value="#project8">Solitude</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="width">To width (in pixels):</label>
+      <input type="number" class="form-control" id="width" placeholder="Width">
+    </div>
+    <div class="form-group">
+      <label for="description">And to description:</label>
+      <input type="text" class="form-control" id="description" placeholder="Project desicription">
+    </div>
+    <button id="submitBtn" type="button" class="btn btn-default">Submit</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+
 </body>
 </html>
